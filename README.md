@@ -1,7 +1,7 @@
       WELCOME....
 I have created one Repository for Employee Management
 In that Repo i have create entity class, repo , interface, service and controller class.
-There are three methods in there.   so now each of you  choose one method and write bussiness logic in serviceImpl and write  api for that perticular method.
+There are three methods in there.   so now each one of you  choose one method and write bussiness logic in serviceImpl and write  api for that perticular method.
 
 Methods are 1) saveEmp
             2) deleteEmp
