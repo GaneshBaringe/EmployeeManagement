@@ -1,6 +1,7 @@
 package com.avsoft.employee.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,5 +28,9 @@ public class EmployeeController {
 	public Employee viewEmployee(@PathVariable("id") int id) {
 		return employeeService.viewEmployee(id);
 	}
-
+	@DeleteMapping("/delete/{id}")
+     public String deleteEmployee(@PathVariable("id")int id) {
+		employeeService.deleteEmp(id);
+		return "Employee Deleted..";
+	}
 }
